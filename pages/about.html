@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../style/styles.css">
+</head>
+
+<body>
+  <header id="ribbon">
+    <div class="logo"><img src="../resources/logo.png" alt=""></div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./solutions.html">OUR SOLUTIONS</a></li>
+        <li><a href="./products.html">PRODUCTS</a></li>
+        <li><a href="./about.html" class="active">ABOUT US</a></li>
+        <li><a href="./blogs.html">BLOGS</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="contact-btn">CONTACT US</a>
+
+    <img onclick="toggleMenu()" id="menu-icon" class="ham-menu-img" src="../resources/ham-menu.png" alt="Menu">
+    <!-- changes
+      -->
+    <div id="mobile-menu" class="ham-menu">
+      <ul>
+        <li>HOME</li>
+        <li>SERVICES</li>
+        <li>OUR SOLUTIONS</li>
+        <li>PRODUCTS</li>
+        <li>ABOUT US</li>
+        <li>BLOGS</li>
+      </ul>
+    </div>
+
+  </header>
+  <div class="first-screen"></div>
+
+
+
+  <!-- script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      const isMenuOpen = menu.style.display === "flex";
+
+      // Toggle display
+      menu.style.display = isMenuOpen ? "none" : "flex";
+
+      // Toggle image source
+      menuIcon.src = isMenuOpen
+        ? "../resources/ham-menu.png"
+        : "../resources/close.png"; // Make sure this icon exists
+    }
+  </script>
+</body>
+
+</html>
