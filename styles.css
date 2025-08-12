@@ -46,6 +46,11 @@ nav ul li {
   color: #000;
 }
 
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
 .contact-btn {
   background-color: #235dd7;
   color: white;
@@ -1218,4 +1223,11 @@ nav ul li {
 
 @media (max-width: 768px){
   
+}
+
+.active{
+  background-color: rgb(103, 103, 253);
+  color: white !important;
+  padding: 10px;
+  border-radius: 40px;
 }
