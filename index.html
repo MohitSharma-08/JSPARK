@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/    font-awesome/6.5.2/css/all.min.css" />
 
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./style/styles.css">
 
 </head>
 
@@ -24,24 +24,20 @@
     <div class="logo"><img src="./resources/logo.png" alt=""></div>
     <nav>
       <ul>
-        <li>HOME</li>
-        <li>SERVICES</li>
-        <li>OUR SOLUTIONS</li>
-        <li>PRODUCTS</li>
-        <li>ABOUT US</li>
-        <li>BLOGS</li>
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="./pages/services.html">SERVICES</a></li>
+        <li><a href="./pages/solutions.html">OUR SOLUTIONS</a></li>
+        <li><a href="./pages/products.html">PRODUCTS</a></li>
+        <li><a href="./pages/about.html">ABOUT US</a></li>
+        <li><a href="./pages/blogs.html">BLOGS</a></li>
       </ul>
     </nav>
-    <a href="#" class="contact-btn">CONTACT US</a>
 
-    <img 
-      onclick="toggleMenu()" 
-      id="menu-icon" 
-      class="ham-menu-img" 
-      src="./resources/ham-menu.png" 
-      alt="Menu"
-    >
+    <a href="./pages/contact.html" class="contact-btn">CONTACT US</a>
 
+    <img onclick="toggleMenu()" id="menu-icon" class="ham-menu-img" src="./resources/ham-menu.png" alt="Menu">
+    <!-- changes
+      -->
     <div id="mobile-menu" class="ham-menu">
       <ul>
         <li>HOME</li>
@@ -246,37 +242,37 @@
 
 
   <div class="carousel">
-  <button class="carousel-btn prev">&#10094;</button>
-  <button class="carousel-btn next">&#10095;</button>
-  <ul class="carousel-track">
-    <li class="slide">
-      <h4 class="e4-card-name">Cody Fisher</h4>
-      <p class="e4-card-role">Sr. Software Developer</p>
-      <img src="./resources/screen-4/f1.png" alt="">
-    </li>
-    <li class="slide">
-      <h4 class="e4-card-name">Devon Lane</h4>
-      <p class="e4-card-role">Sr. Software Developer</p>
-      <img src="./resources/screen-4/f2.png" alt="">
-    </li>
-    <li class="slide">
-      <h4 class="e4-card-name">Courtney Henry</h4>
-      <p class="e4-card-role">Sr. Software Engineer</p>
-      <img src="./resources/screen-4/f3.png" alt="">
-    </li>
-    <li class="slide">
-      <h4 class="e4-card-name">Jenny Wilson</h4>
-      <p class="e4-card-role">UI/UX Designer</p>
-      <img src="./resources/screen-4/f4.png" alt="">
-    </li>
-    <li class="slide">
-      <h4 class="e4-card-name">Kristin Watson</h4>
-      <p class="e4-card-role">Sr. Software Engineer</p>
-      <img src="./resources/screen-4/f5.png" alt="">
-    </li>
-  </ul>
-  <div class="carousel-dots"></div>
-</div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <ul class="carousel-track">
+      <li class="slide">
+        <h4 class="e4-card-name">Cody Fisher</h4>
+        <p class="e4-card-role">Sr. Software Developer</p>
+        <img src="./resources/screen-4/f1.png" alt="">
+      </li>
+      <li class="slide">
+        <h4 class="e4-card-name">Devon Lane</h4>
+        <p class="e4-card-role">Sr. Software Developer</p>
+        <img src="./resources/screen-4/f2.png" alt="">
+      </li>
+      <li class="slide">
+        <h4 class="e4-card-name">Courtney Henry</h4>
+        <p class="e4-card-role">Sr. Software Engineer</p>
+        <img src="./resources/screen-4/f3.png" alt="">
+      </li>
+      <li class="slide">
+        <h4 class="e4-card-name">Jenny Wilson</h4>
+        <p class="e4-card-role">UI/UX Designer</p>
+        <img src="./resources/screen-4/f4.png" alt="">
+      </li>
+      <li class="slide">
+        <h4 class="e4-card-name">Kristin Watson</h4>
+        <p class="e4-card-role">Sr. Software Engineer</p>
+        <img src="./resources/screen-4/f5.png" alt="">
+      </li>
+    </ul>
+    <div class="carousel-dots"></div>
+  </div>
 
 
 
@@ -299,28 +295,28 @@
   <div class="inspired-bottom">
     <div class="inspired-bottom-left">
       <h4 class="ins-bottom-head">Contact Info</h4>
-        <div class="ins-buttons-left">
-          <button>
-            <div class="logo-maker">
-              <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
-            </div>
-            <p class="button-label">Jspark</p>
-          </button>
+      <div class="ins-buttons-left">
+        <button>
+          <div class="logo-maker">
+            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+          </div>
+          <p class="button-label">Jspark</p>
+        </button>
 
-          <button>
-            <div class="logo-maker">
-              <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-            </div>
-            <p class="button-label">sales@jspark.in</p>
-          </button>
+        <button>
+          <div class="logo-maker">
+            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+          </div>
+          <p class="button-label">sales@jspark.in</p>
+        </button>
 
-          <button>
-            <div class="logo-maker">
-              <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
-            </div>
-            <p class="button-label">www.jspark.in</p>
-          </button>
-        </div>
+        <button>
+          <div class="logo-maker">
+            <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+          </div>
+          <p class="button-label">www.jspark.in</p>
+        </button>
+      </div>
 
     </div>
 
@@ -339,7 +335,7 @@
 
   <footer class="footer">
     <div class="footer-left">
-      <img class="footer-logo" src="./image.png" alt="">
+      <img class="footer-logo" src="./resources/footer/image.png" alt="">
       <img class="logo-white" src="./resources/white-logo.png" alt="Jspark Logo">
     </div>
     <div class="footer-links">
@@ -355,10 +351,10 @@
     </div>
   </footer>
 
-
+  <script src="https://kit.fontawesome.com/8607512ad3.js" crossorigin="anonymous"></script>
+  <script src="./script/script.js"></script>
 
 </body>
-<script src="https://kit.fontawesome.com/8607512ad3.js" crossorigin="anonymous"></script>
-<script src="./script.js"></script>
+
 
 </html>

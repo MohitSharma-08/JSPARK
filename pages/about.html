@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../style/styles.css">
+</head>
+
+<body>
+  <header id="ribbon">
+    <div class="logo"><img src="../resources/logo.png" alt=""></div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./solutions.html">OUR SOLUTIONS</a></li>
+        <li><a href="./products.html">PRODUCTS</a></li>
+        <li><a href="./about.html" class="active">ABOUT US</a></li>
+        <li><a href="./blogs.html">BLOGS</a></li>
+      </ul>
+    </nav>
+
+    <a href="./contact.html" class="contact-btn">CONTACT US</a>
+
+    <img onclick="toggleMenu()" id="menu-icon" class="ham-menu-img" src="../resources/ham-menu.png" alt="Menu">
+    <!-- changes
+      -->
+    <div id="mobile-menu" class="ham-menu">
+      <ul>
+        <li>HOME</li>
+        <li>SERVICES</li>
+        <li>OUR SOLUTIONS</li>
+        <li>PRODUCTS</li>
+        <li>ABOUT US</li>
+        <li>BLOGS</li>
+      </ul>
+    </div>
+
+  </header>
+  <div class="first-screen"></div>
+
+  <!-- second section -->
+  <div class="trusted-section">
+    <div class="trusted-image">
+      <img class="img-img-img" src="../resources/screen-2/second-part-bg-3.png" alt="">
+    </div>
+  </div>
+
+  <!-- bottom part -->
+  <div class="sec-5-contact">
+    <div class="left">
+      <h1 class="inspired-text">Stay Inspired <br> Never Stop Innovating</h1>
+      <p class="inspired-para">Let's Connect With Us</p>
+    </div>
+
+    <div class="right">
+      <div class="right-img">
+        <img class="last-sec-logo" src="../resources/screen-4/logo-2.png" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="inspired-bottom">
+    <div class="inspired-bottom-left">
+      <h4 class="ins-bottom-head">Contact Info</h4>
+      <div class="ins-buttons-left">
+        <button>
+          <div class="logo-maker">
+            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+          </div>
+          <p class="button-label">Jspark</p>
+        </button>
+
+        <button>
+          <div class="logo-maker">
+            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+          </div>
+          <p class="button-label">sales@jspark.in</p>
+        </button>
+
+        <button>
+          <div class="logo-maker">
+            <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+          </div>
+          <p class="button-label">www.jspark.in</p>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="inspired-bottom-right">
+      <h4 class="ins-bottom-head ccc">Subscribe To Our Newsletter</p>
+        <div class="ins-buttons-right">
+          <button class="email-button">
+            <p class="button-label">Enter Your Email</p>
+          </button>
+
+          <button class="subscribe-btn">Subscribe</button>
+
+        </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <img class="footer-logo" src="../resources/footer/image.png" alt="">
+      <img class="logo-white" src="../resources/white-logo.png" alt="Jspark Logo">
+    </div>
+    <div class="footer-links">
+      <a href="#">HOME</a>
+      <a href="#">SERVICES</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">TECHNOLOGY</a>
+      <a href="#">SUPPORT</a>
+      <a href="#">TERMS & CONDITIONS</a>
+    </div>
+    <div class="footer-right">
+      © All Rights Reserved, 2024
+    </div>
+  </footer>
+
+  <!-- font awesome include -->
+
+  <script src="https://kit.fontawesome.com/8607512ad3.js" crossorigin="anonymous"></script>
+
+
+
+  <!-- script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      const isMenuOpen = menu.style.display === "flex";
+
+      // Toggle display
+      menu.style.display = isMenuOpen ? "none" : "flex";
+
+      // Toggle image source
+      menuIcon.src = isMenuOpen
+        ? "../resources/ham-menu.png"
+        : "../resources/close.png"; // Make sure this icon exists
+    }
+  </script>
+</body>
+
+</html>
