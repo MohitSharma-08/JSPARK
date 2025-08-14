@@ -1,8 +1,118 @@
-.contact-page-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -100px auto;
-    width: 87%;
+.first-screen-text{
+  margin-bottom: 180px;
+  width: 50%;
+}
 
+.first-screen-text h1{
+  font-size: 50px;
+  color: #0A133A;
+}
+
+.first-screen-text h2{
+  font-size: 28px;
+  font-weight: 400;
+  color: #444F7F;
+}
+
+.contact-page-content {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  padding: 80px;
+  gap: 120px;
+}
+
+.contact-content {
+  width: 50%;
+}
+
+.contact-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* left */
+.c-c-left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.left-4-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f5f6ff;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.card-icon-text {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 14px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+/* right */
+.c-c-right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.right-form {
+  background-color: #f5f6ff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  padding: 40px;
+}
+
+.right-form input {
+  border: 1px solid #bacffc;
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.right-form textarea {
+  border: 1px solid #bacffc;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  resize: none;
+}
+
+.right-batan{
+  height: 40px;
+  background-color: #235DD7;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
 }
